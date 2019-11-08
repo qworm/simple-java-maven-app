@@ -8,6 +8,7 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
+                sh 'pwd'
                 sh 'mvn -B -DskipTests clean package' 
             }
         }
